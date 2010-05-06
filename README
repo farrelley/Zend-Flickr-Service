@@ -1,0 +1,5 @@
+I had to rewrite a bit of the Zend Service Flickr class in order to get authenication working.  I decided to rewrite the class to remove the iterator that the current implementation is using and just go with JSON.  It's much quicker.  It is developed in a way that you should be able to add in any of the response formats that flickr provides.  This is still a work in progress and I will be updating it regularly.
+
+Shaun Farrell
+http://www.farleyhills.com/
+http://www.kapustabrothers.com/
