@@ -32,6 +32,10 @@ class My_Service_Flickr_People extends My_Service_Flickr_Abstract
         return $response->getBody();
 	}
 	
+	/**
+	 * 
+	 * @param array $options
+	 */
 	public function getPhotos(array $options)
 	{
 		$method = "flickr.people.getPhotos";

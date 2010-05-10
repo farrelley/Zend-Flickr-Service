@@ -5,6 +5,7 @@ class My_Service_Flickr
 	protected $_photos;
 	protected $_stats;
 	protected $_people;
+	protected $_tags;
 	protected $_auth;
 	protected $_interestingness;
 	protected $_test;
@@ -82,6 +83,17 @@ class My_Service_Flickr
 			$this->_photos = new My_Service_Flickr_Photos_Photos($this->_flickrConnection);
 		}
 		return $this->_photos;
+	}
+	
+	/**
+	 * @return My_Service_Flickr_Tags
+	 */
+	public function tags()
+	{
+		if (null === $this->_tags) {
+			$this->_tags = new My_Service_Flickr_Tags($this->_flickrConnection);
+		}
+		return $this->_tags;
 	}
 	
 }
